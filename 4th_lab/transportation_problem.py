@@ -156,13 +156,12 @@ def matrix_transport_problem(amounts, basis_coords, costs):
 
 
 def main():
-    supply = array([15, 12, 18, 20])
-    demand = array([5, 5, 10, 4, 6, 20, 10, 5])
+    supply = array([100, 50, 80])
+    demand = array([70, 70, 90])
     cost = array([
-        [-3, 10, 70, -3, 7, 4, 2, -20],
-        [3, 5, 8, 8, 0, 1, 7, -10],
-        [-15, 1, 0, 0, 13, 5, 4, 5],
-        [1, -5, 9, -3, -4, 7, 16, 25],
+        [2, 3, 4],
+        [6, 1, 5],
+        [6, 4, 2]
     ])
 
     initial_amounts, basis_coords = south_west_angle_method(supply, demand)
